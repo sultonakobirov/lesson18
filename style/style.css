@@ -1,0 +1,125 @@
+@import url(..//fonts/fonts/stylesheet.css);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Gilroy";
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 100px auto;
+  max-width: 1000px;
+  width: 100%;
+}
+.container h1 {
+  margin-bottom: 30px;
+  font-size: 48px;
+}
+.container p {
+  margin-bottom: 60px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.container .macbook {
+  display: flex;
+  margin-bottom: 60px;
+  gap: 76px;
+  align-items: center;
+}
+.container .macbook .about {
+  display: flex;
+  flex-direction: column;
+}
+.container .macbook .about h3 {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 700;
+}
+.container .macbook .about .color {
+  color: #0071E3;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  margin-bottom: 48px;
+}
+.container .macbook .about .price {
+  font-size: 48px;
+  font-weight: 700;
+}
+.container .options {
+  margin-bottom: 50px;
+}
+.container .options .color-option {
+  display: flex;
+  gap: 10px;
+}
+.container .options .color-option button {
+  border-radius: 10px;
+  width: 155px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  line-height: 22px;
+  border: 0;
+  color: white;
+  background-color: #CFE7FF;
+  font-weight: 500;
+}
+.container .komplektacii {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container .komplektacii .button {
+  width: 320px;
+  height: 60px;
+  background-color: white;
+  border: 2px solid #CFE7FF;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.container .komplektacii .button span {
+  font-size: 14px;
+  font-weight: 600;
+}
+.container .komplektacii .button .storage {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media (max-width: 550px) {
+  .container {
+    margin-top: 30px;
+  }
+  .container h1 {
+    font-size: 38px;
+  }
+  .container p {
+    width: 90%;
+  }
+  .container .macbook {
+    flex-direction: column;
+  }
+  .container .macbook img {
+    width: 90%;
+  }
+  .container .options .color-option {
+    flex-direction: column;
+  }
+  .container .options .color-option button {
+    width: 260px;
+  }
+  .container .komplektacii .button {
+    width: 260px;
+  }
+}/*# sourceMappingURL=style.css.map */
