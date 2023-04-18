@@ -68,6 +68,10 @@
                 color: white;
                 background-color: #CFE7FF;
                 font-weight: 500;
+                &:hover{
+                    background-color: #0071E3;
+                    transition: 0.5s;
+                }
             }
         }
 
@@ -86,6 +90,10 @@
             justify-content: space-between;
             align-items: center;
             padding: 0 20px;
+            &:hover{
+                border-color: #0071E3;
+                transition: 0.5s;
+            }
             span{
                 font-size: 14px;
                 font-weight: 600;

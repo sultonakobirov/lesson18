@@ -72,6 +72,10 @@
   background-color: #CFE7FF;
   font-weight: 500;
 }
+.container .options .color-option button:hover {
+  background-color: #0071E3;
+  transition: 0.5s;
+}
 .container .komplektacii {
   display: flex;
   flex-direction: column;
@@ -87,6 +91,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+}
+.container .komplektacii .button:hover {
+  border-color: #0071E3;
+  transition: 0.5s;
 }
 .container .komplektacii .button span {
   font-size: 14px;
