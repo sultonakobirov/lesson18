@@ -31,37 +31,48 @@ let innicialPrice = 1999
 let priceOne = 200
 let priceTwo = 600
 let priceThree = 1200
-let zero = 0
 
 let borderColor = (btnOne, btnTwo) =>{
     btnOne.style.borderColor = '#0071E3'
-    btnTwo.style.borderColor = '#CFE7FF'    
+    btnTwo.style.borderColor = '#CFE7FF'
 }
 
 storageOne.onclick = () =>{
     borderColor(storageOne, storageFour)
     borderColor(storageOne, storageThree)
     borderColor(storageOne, storageTwo)
-    price.textContent = `$${innicialPrice}`
-    zero =`$${innicialPrice}`.toString()
+    let firstPart =`$${innicialPrice}`.toString().slice(0, 2)
+    let secondPart = `$${innicialPrice}`.toString().slice(2, 7)
+    secondPart = firstPart+','+secondPart
+    price.textContent = secondPart
+
     
 }
 storageTwo.onclick = () =>{
     borderColor(storageTwo, storageOne)
     borderColor(storageTwo, storageThree)
     borderColor(storageTwo, storageFour)
-    price.textContent = `$${innicialPrice + priceOne}`
+    let firstPart =`$${innicialPrice + priceOne}`.toString().slice(0, 2)
+    let secondPart = `$${innicialPrice + priceOne}`.toString().slice(2, 7)
+    secondPart = firstPart+','+secondPart
+    price.textContent = secondPart
 }
 storageThree.onclick = () =>{
     borderColor(storageThree, storageTwo)
     borderColor(storageThree, storageOne)
     borderColor(storageThree, storageFour)
-    price.textContent = `$${innicialPrice + priceTwo}`
+    let firstPart =`$${innicialPrice + priceTwo}`.toString().slice(0, 2)
+    let secondPart = `$${innicialPrice + priceTwo}`.toString().slice(2, 7)
+    secondPart = firstPart+','+secondPart
+    price.textContent = secondPart
 }
 storageFour.onclick = () =>{
     borderColor(storageFour, storageThree)
     borderColor(storageFour, storageOne)
     borderColor(storageFour, storageTwo)
-    price.textContent = `$${innicialPrice + priceThree}`
+    let firstPart =`$${innicialPrice + priceThree}`.toString().slice(0, 2)
+    let secondPart = `$${innicialPrice + priceThree}`.toString().slice(2, 7)
+    secondPart = firstPart+','+secondPart
+    price.textContent = secondPart
 }
 
