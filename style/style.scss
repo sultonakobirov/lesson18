@@ -29,7 +29,7 @@
     margin: 100px auto;
     max-width: 1000px;
     width: 100%;
-    padding: 0 30px;
+    padding: 0 10px;
     h1{
         margin-bottom: 30px;
         font-size: 48px;
@@ -78,7 +78,6 @@
                 @include color-button()
             }
         }
-
     }
     .komplektacii{
         display: flex;
@@ -94,32 +93,38 @@
             justify-content: space-between;
             align-items: center;
             padding: 0 20px;
-            &:hover{
-                border-color: #0071E3;
-                transition: 0.5s;
-            }
+                &:hover{
+                    border-color: #0071E3;
+                    transition: 0.5s;
+                }
             span{
                 font-size: 14px;
                 font-weight: 600;
             }
+        }
+        .active{
+            border-color: #0071E3;
         }
         .storage{
             font-size: 18px;
             font-weight: 600;
         }
     }
-}
+}   
 @media (max-width: 550px) {
     .container{
-        margin-top: 30px;
+        margin: 30px auto;
         h1{
             font-size: 38px;
         }
-        p{
-            width: 90%;
-        }
         .macbook{
             flex-direction: column;
+            gap: 10px;
+            .about{
+                .color{
+                    margin-bottom: 20px;
+                }
+            }
             img{
                 width: 90%;
             }
@@ -127,8 +132,9 @@
         .options{
             .color-option{
                 flex-direction: column;
-                button{
+                .btn{
                     width: 260px;
+
                 }
             }
             
